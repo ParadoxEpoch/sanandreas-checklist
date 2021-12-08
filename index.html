@@ -1,6 +1,7 @@
 <html>
 
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/izimodal/1.5.1/css/iziModal.min.css"/>
     <style>
         body {
             background: url('images/bg.jpg') no-repeat center center fixed;
@@ -1239,13 +1240,20 @@
 
     </div>
 
+    <!-- Modals -->
+    <div class="modal" data-modal="loc1">
+        This is just a test modal for the mission "Life's a Beach" with the ID "loc1"
+    </div>
+
     <div id="tooltip" class="is-hidden"></div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/izimodal/1.5.1/js/iziModal.min.js"></script>
     <script>
         function initItems() {
             const items = JSON.parse(localStorage.getItem('checkedItemsSA'));
             if (!items) return saveItems();
             items.forEach((val, index) => $('input')[index].checked = val);
+            $('.modal').iziModal(); // Initialise Modals
             saveItems();
         }
         function saveItems() {
@@ -1256,7 +1264,7 @@
 
             $('input').each((index, elem) => {
 
-                // If checkbox has requirements
+                // If item has requirements
                 if ($(elem).data('requires')) {
                     const requirements = $(elem).data('requires').split(',');
                     let meetsRequirements = true;
@@ -1276,6 +1284,10 @@
                     }
                     
                 }
+
+                // If item has modal
+                const hasModal = !!$(`[data-modal="${$(elem).attr('id')}"]`).length;
+                if (hasModal) console.log(`Mission ${$(elem).attr('id')} has a modal linked to it!`);
 
                 itemStats.push(elem.checked);
                 if (elem.checked) numSelected++;
