@@ -1292,7 +1292,7 @@
         $(document).ready(() => initItems());
 
         $(document).mousemove(function(e) {
-            $('#tooltip').css({top: e.clientY, left: e.clientX});
+            $('#tooltip').css({top: e.pageY, left: e.pageX});
         });
 
         $(document).on('mouseenter', '[tooltip]', function () {
