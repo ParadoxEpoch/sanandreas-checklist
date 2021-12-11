@@ -270,6 +270,7 @@
             <div>by <a href="https://twitter.com/ParadoxEpoch" target="_blank">@ParadoxEpoch</a></div>
             <br>
             <div id="links">
+                <div onclick="debugList()" style="font-size: 1rem; text-decoration: underline; cursor: pointer; color: #000; text-shadow: none; margin-bottom: 10px;">Debug: List Items</div>
                 <a href="https://nebu.dev" target="_blank"><i class="fas fa-globe-americas"></i></a>
                 <span>&#183;</span>
                 <a href="https://twitter.com/ParadoxEpoch" target="_blank"><i class="fab fa-twitter"></i></a>
@@ -1394,6 +1395,14 @@
             This mission can be exploited to add the FP & EP properties to any vehicle.
         </p>
     </div>
+
+    
+
+    <div class="modal" data-modal="debug_list">
+        <div style="max-height: 70vh; overflow: auto; display: flex; justify-content: center;">
+            <table style="border-collapse: collapse;"></table>
+        </div>
+    </div>
     <!-- End Modals -->
 
     <div id="tooltip" class="is-hidden"></div>
@@ -1498,6 +1507,26 @@
                 audio.onended = resolve;
                 audio.src = url
             });
+        }
+
+        function debugList() {
+            const missionList = [];
+            $('[data-modal="debug_list"] table').empty();
+            $('input').each((index, elem) => {
+                const missionId = $(elem).attr('id');
+                if (!missionId) return;
+                const missionName = $(elem).next().text();
+                missionList.push({id: missionId, name: missionName});
+                $('[data-modal="debug_list"] table').append(`
+                    <tr>
+                        <td>${index}</td>
+                        <td>${missionId}</td>
+                        <td>${missionName}</td>
+                    </tr>
+                `);
+            })
+            console.table(missionList);
+            $('[data-modal="debug_list"]').iziModal('open');
         }
 
     </script>
