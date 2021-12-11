@@ -1473,12 +1473,12 @@
             $('#tooltip').css({top: e.pageY, left: e.pageX});
         });
 
-        $(document).on('mouseenter', '[tooltip]', function () {
+        $(document).on('mouseenter', '[tooltip]', function() {
             $('#tooltip').removeClass('is-hidden');
             $('#tooltip').text($(this).attr('tooltip'));
         });
 
-        $(document).on('mouseleave', '[tooltip]', function () {
+        $(document).on('mouseleave', '[tooltip]', function() {
             $('#tooltip').addClass('is-hidden');
         });
 
