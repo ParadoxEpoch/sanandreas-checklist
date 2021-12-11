@@ -6,6 +6,7 @@
         body {
             background: url('images/bg.jpg') no-repeat center center fixed;
             background-size: cover;
+            font-family: 'ViceCitySans';
         }
         #container {
             display: flex;
@@ -31,6 +32,7 @@
             font-size: 1.1em;
         }
         h2 {
+        #container h2 {
             font-family: ViceCitySans;
         }
         .contents {
@@ -47,6 +49,10 @@
             list-style: none;
             padding: 0;
             font-family: ViceCitySans;
+        }
+        .contents > div ul li > span,
+        .contents > div ul li > i {
+            margin-left: 5px;
         }
         @font-face {
             font-family: ViceCitySans;
@@ -133,12 +139,57 @@
             min-width: 75px;
             color: #fff;
             background: rgba(0, 0, 0, 0.8);
-            font-family: 'ViceCitySans';
+            font-family: ViceCitySans;
             border-radius: 3px;
             padding: 10px;
             margin: 5px;
             font-size: 1.1em;
             font-weight: bold;
+        }
+
+        .iziModal-content > * {
+            padding: 0 25px;
+        }
+
+        .iziModal-content > h3 > i {
+            width: 20px;
+            text-align: center;
+            margin-right: 3px;
+        }
+
+        /* .iziModal-content b {
+            font-family: ViceCitySans;
+        } */
+
+        .iziModal-content > p {
+            font-family: 'Segoe UI', sans-serif;
+            margin-bottom: 35px;
+        }
+
+        .iziModal .iziModal-header-title {
+            color: #000;
+            font-size: 20px;
+            font-family: ViceCitySans;
+        }
+
+        .iziModal .iziModal-header-subtitle {
+            color: #000;
+            font-size: 16px;
+        }
+
+        .modal-trigger {
+            cursor: help;
+            text-decoration-line: underline;
+            text-decoration-style: dotted;
+            text-underline-offset: 3px;
+        }
+
+        .modal[data-modal="debug_list"] td {
+            padding: 5px;
+        }
+
+        .modal[data-modal="debug_list"] tr:nth-child(odd) {
+            background-color: #ddcdab;
         }
 
         .is-hidden {
