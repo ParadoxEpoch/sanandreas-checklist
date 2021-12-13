@@ -379,31 +379,31 @@
                             <b>Countryside Missions</b>
                             <ul style="columns:2">
                                 <li><img src="icons/crash.png"><input type="checkbox" id="cside1" data-requires="lsf2"><span>Badlands</span></li>
-                                <li><img src="icons/question.png"><input type="checkbox" id="cside2"><span>First Date</span></li>
-                                <li><img src="icons/cesar.png"><input type="checkbox" id="cside3"><span>King in Exile</span></li>
-                                <li><img src="icons/catalina.png"><input type="checkbox" id="cside4"><span>First Base</span></li>
-                                <li><img src="icons/catalina.png"><input type="checkbox" id="cside5"><span>Gone Courting</span></li>
-                                <li><img src="icons/catalina.png"><input type="checkbox" id="cside6"><span>Made in Heaven</span></li>
-                                <li><img src="icons/cesar.png"><input type="checkbox" id="cside7"><span>Wu Zi Mu</span></li>
-                                <li><img src="icons/cesar.png"><input type="checkbox" id="cside8"><span>Farewell, My Love</span></li>
+                                <li><img src="icons/question.png"><input type="checkbox" id="cside2" data-requires="cside1"><span>First Date</span></li>
+                                <li><img src="icons/cesar.png"><input type="checkbox" id="cside3" data-requires="truth1"><span>King in Exile</span></li>
+                                <li><img src="icons/catalina.png"><input type="checkbox" id="cside4" data-requires="cside3"><span>First Base</span></li>
+                                <li><img src="icons/catalina.png"><input type="checkbox" id="cside5" data-requires="cside4"><span>Gone Courting</span></li>
+                                <li><img src="icons/catalina.png"><input type="checkbox" id="cside6" data-requires="cside5"><span>Made in Heaven</span></li>
+                                <li><img src="icons/cesar.png"><input type="checkbox" id="cside7" data-requires="cside4"><span>Wu Zi Mu</span></li>
+                                <li><img src="icons/cesar.png"><input type="checkbox" id="cside8" data-requires="cside6,cside7"><span>Farewell, My Love</span></li>
                             </ul>
                         </div>
 
                         <div>
                             <b>Catalina Robbery Missions</b>
                             <ul style="columns:2">
-                                <li><img src="icons/cash.png"><input type="checkbox" id="cat1"><span>Tanker Commander</span></li>
-                                <li><img src="icons/cash.png"><input type="checkbox" id="cat2"><span>Against All Odds</span></li>
-                                <li><img src="icons/cash.png"><input type="checkbox" id="cat3"><span>Local Liquor Store</span></li>
-                                <li><img src="icons/cash.png"><input type="checkbox" id="cat4"><span>Small Town Bank</span></li>
+                                <li><img src="icons/cash.png"><input type="checkbox" id="cat1" data-requires="cside2"><span>Tanker Commander</span></li>
+                                <li><img src="icons/cash.png"><input type="checkbox" id="cat2" data-requires="cside2"><span>Against All Odds</span></li>
+                                <li><img src="icons/cash.png"><input type="checkbox" id="cat3" data-requires="cside2"><span>Local Liquor Store</span></li>
+                                <li><img src="icons/cash.png"><input type="checkbox" id="cat4" data-requires="cside2"><span>Small Town Bank</span></li>
                             </ul>
                         </div>
 
                         <div>
                             <b>The Truth Missions</b>
                             <ul style="columns:2">
-                                <li><img src="icons/truth.png"><input type="checkbox" id="truth1"><span>Body Harvest</span></li>
-                                <li><img src="icons/truth.png"><input type="checkbox" id="truth2"><span>Are You Going to San Fierro?</span></li>
+                                <li><img src="icons/truth.png"><input type="checkbox" id="truth1" data-requires="cside2"><span>Body Harvest</span></li>
+                                <li><img src="icons/truth.png"><input type="checkbox" id="truth2" data-requires="cside8"><span>Are You Going to San Fierro?</span></li>
                             </ul>
                         </div>
 
@@ -412,21 +412,21 @@
                         <div>
                             <b>Toreno Missions</b>
                             <ul style="columns:2">
-                                <li><img src="icons/question.png"><input type="checkbox" id="toreno1"><span>Monster</span></li>
-                                <li><img src="icons/question.png"><input type="checkbox" id="toreno2"><span>Highjack</span></li>
-                                <li><img src="icons/toreno.png"><input type="checkbox" id="toreno3"><span>Interdiction</span></li>
-                                <li><img src="icons/toreno.png"><input type="checkbox" id="toreno4"><span>Verdant Meadows</span></li>
+                                <li><img src="icons/question.png"><input type="checkbox" id="toreno1" data-requires="syn10"><span>Monster</span></li>
+                                <li><img src="icons/question.png"><input type="checkbox" id="toreno2" data-requires="toreno1"><span>Highjack</span></li>
+                                <li><img src="icons/toreno.png"><input type="checkbox" id="toreno3" data-requires="toreno2"><span>Interdiction</span></li>
+                                <li><img src="icons/toreno.png"><input type="checkbox" id="toreno4" data-requires="toreno3"><span>Verdant Meadows</span></li>
                             </ul>
                         </div>
 
                         <div>
                             <b>Airstrip Missions</b>
                             <ul style="columns:2">
-                                <li><img src="icons/school.png"><input type="checkbox" id="airstrip1"><span>Learning to Fly</span></li>
-                                <li><img src="icons/airport.png"><input type="checkbox" id="airstrip2"><span>N.O.E.</span></li>
-                                <li><img src="icons/airport.png"><input type="checkbox" id="airstrip3"><span>Stowaway</span></li>
-                                <li><img src="icons/airport.png"><input type="checkbox" id="airstrip4"><span>Black Project</span><i class="fas fa-trophy" tooltip="Missable Trophy: They Can’t Stop All of Us"></i></li>
-                                <li><img src="icons/airport.png"><input type="checkbox" id="airstrip5"><span>Green Goo</span></li>
+                                <li><img src="icons/school.png"><input type="checkbox" id="airstrip1" data-requires="toreno4"><span>Learning to Fly</span></li>
+                                <li><img src="icons/airport.png"><input type="checkbox" id="airstrip2" data-requires="airstrip1"><span>N.O.E.</span></li>
+                                <li><img src="icons/airport.png"><input type="checkbox" id="airstrip3" data-requires="airstrip2"><span>Stowaway</span></li>
+                                <li><img src="icons/airport.png"><input type="checkbox" id="airstrip4" data-requires="airstrip3"><span>Black Project</span><i class="fas fa-trophy" tooltip="Missable Trophy: They Can’t Stop All of Us"></i></li>
+                                <li><img src="icons/airport.png"><input type="checkbox" id="airstrip5" data-requires="airstrip4"><span>Green Goo</span></li>
                             </ul>
                         </div>
 
@@ -438,55 +438,55 @@
                         <div>
                             <b>Garage Missions</b>
                             <ul style="columns:2">
-                                <li><img src="icons/cj.png"><input type="checkbox"><span>Wear Flowers In Your Hair</span></li>
-                                <li><img src="icons/cj.png"><input type="checkbox"><span>Deconstruction</span></li>
-                                <li><img src="icons/cj.png"><input type="checkbox"><span>555 WE TIP</span></li>
+                                <li><img src="icons/cj.png"><input type="checkbox" id="garage1" data-requires="truth2"><span>Wear Flowers In Your Hair</span></li>
+                                <li><img src="icons/cj.png"><input type="checkbox" id="garage2" data-requires="garage1"><span>555 WE TIP</span></li>
+                                <li><img src="icons/cj.png"><input type="checkbox" id="garage3" data-requires="garage2"><span>Deconstruction</span></li>
                             </ul>
                         </div>
 
                         <div>
                             <b>Syndicate Missions</b>
                             <ul style="columns:2">
-                                <li><img src="icons/triads.png"><input type="checkbox"><span>Photo Opportunity</span></li>
-                                <li><img src="icons/triads.png"><input type="checkbox"><span>Jizzy</span></li>
-                                <li><img src="icons/loco.png"><input type="checkbox"><span>T-Bone Mendez</span></li>
-                                <li><img src="icons/loco.png"><input type="checkbox"><span>Mike Toreno</span><i class="fas fa-trophy" tooltip="Missable Trophy: Who Needs Directions?"></i></li>
-                                <li><img src="icons/triads.png"><input type="checkbox"><span>Outrider</span></li>
-                                <li><img src="icons/crash.png"><input type="checkbox"><span>Snail Trail</span></li>
-                                <li><img src="icons/triads.png"><input type="checkbox"><span>Ice Cold Killa</span></li>
-                                <li><img src="icons/triads.png"><input type="checkbox"><span>Pier 69</span></li>
-                                <li><img src="icons/triads.png"><input type="checkbox"><span>Toreno's Last Fight</span></li>
-                                <li><img src="icons/triads.png"><input type="checkbox"><span>Yay Ka-Boom-Boom</span></li>
+                                <li><img src="icons/triads.png"><input type="checkbox" id="syn1" data-requires="garage3"><span>Photo Opportunity</span></li>
+                                <li><img src="icons/triads.png"><input type="checkbox" id="syn2" data-requires="syn1"><span>Jizzy</span></li>
+                                <li><img src="icons/loco.png"><input type="checkbox" id="syn3" data-requires="syn2"><span>T-Bone Mendez</span></li>
+                                <li><img src="icons/loco.png"><input type="checkbox" id="syn4" data-requires="syn3"><span>Mike Toreno</span><i class="fas fa-trophy" tooltip="Missable Trophy: Who Needs Directions?"></i></li>
+                                <li><img src="icons/triads.png"><input type="checkbox" id="syn5" data-requires="syn4"><span>Outrider</span></li>
+                                <li><img src="icons/crash.png"><input type="checkbox" id="syn6" data-requires="syn5"><span>Snail Trail</span></li>
+                                <li><img src="icons/triads.png"><input type="checkbox" id="syn7" data-requires="syn6"><span>Ice Cold Killa</span></li>
+                                <li><img src="icons/triads.png"><input type="checkbox" id="syn8" data-requires="syn7"><span>Pier 69</span></li>
+                                <li><img src="icons/triads.png"><input type="checkbox" id="syn9" data-requires="syn8"><span>Toreno's Last Flight</span></li>
+                                <li><img src="icons/triads.png"><input type="checkbox" id="syn10" data-requires="syn9,woozie5"><span>Yay Ka-Boom-Boom</span></li>
                             </ul>
                         </div>
 
                         <div>
                             <b>Zero Missions</b>
                             <ul style="columns:2">
-                                <li><img src="icons/zero.png"><input type="checkbox"><span>Air Raid</span></li>
-                                <li><img src="icons/zero.png"><input type="checkbox"><span>Supply Lines</span></li>
-                                <li><img src="icons/zero.png"><input type="checkbox"><span>New Model Army</span></li>
+                                <li><img src="icons/zero.png"><input type="checkbox" id="zero1" data-requires="garage1"><span>Air Raid</span></li>
+                                <li><img src="icons/zero.png"><input type="checkbox" id="zero2" data-requires="zero1"><span>Supply Lines</span></li>
+                                <li><img src="icons/zero.png"><input type="checkbox" id="zero3" data-requires="zero2"><span>New Model Army</span></li>
                             </ul>
                         </div>
 
                         <div>
                             <b>Woozie Missions</b>
                             <ul style="columns:2">
-                                <li><img src="icons/woozie.png"><input type="checkbox"><span>Mountain Cloud Boys</span></li>
-                                <li><img src="icons/woozie.png"><input type="checkbox"><span>Ran Fa Li</span></li>
-                                <li><img src="icons/woozie.png"><input type="checkbox"><span>Lure</span></li>
-                                <li><img src="icons/woozie.png"><input type="checkbox"><span>Amphibious Assault</span></li>
-                                <li><img src="icons/woozie.png"><input type="checkbox"><span>The Da Nang Thang</span></li>
+                                <li><img src="icons/woozie.png"><input type="checkbox" id="woozie1" data-requires="syn2"><span>Mountain Cloud Boys</span></li>
+                                <li><img src="icons/woozie.png"><input type="checkbox" id="woozie2" data-requires="woozie1"><span>Ran Fa Li</span></li>
+                                <li><img src="icons/woozie.png"><input type="checkbox" id="woozie3" data-requires="woozie2"><span>Lure</span></li>
+                                <li><img src="icons/woozie.png"><input type="checkbox" id="woozie4" data-requires="woozie3"><span>Amphibious Assault</span></li>
+                                <li><img src="icons/woozie.png"><input type="checkbox" id="woozie5" data-requires="woozie4"><span>The Da Nang Thang</span></li>
                             </ul>
                         </div>
 
                         <div>
                             <b>Wang Cars Missions</b>
                             <ul style="columns:2">
-                                <li><img src="icons/cesar.png"><input type="checkbox"><span>Zeroing In</span></li>
-                                <li><img src="icons/cesar.png"><input type="checkbox"><span>Test Drive</span></li>
-                                <li><img src="icons/cesar.png"><input type="checkbox"><span>Customs Fast Track</span></li>
-                                <li><img src="icons/cesar.png"><input type="checkbox"><span>Puncture Wounds</span></li>
+                                <li><img src="icons/cesar.png"><input type="checkbox" id="wang1" data-requires="woozie5"><span>Zeroing In</span></li>
+                                <li><img src="icons/cesar.png"><input type="checkbox" id="wang2" data-requires="wang1"><span>Test Drive</span></li>
+                                <li><img src="icons/cesar.png"><input type="checkbox" id="wang3" data-requires="wang2"><span>Customs Fast Track</span></li>
+                                <li><img src="icons/cesar.png"><input type="checkbox" id="wang4" data-requires="wang3"><span>Puncture Wounds</span></li>
                             </ul>
                         </div>
 
@@ -498,30 +498,30 @@
                         <div>
                             <b>Casino Missions</b>
                             <ul style="columns:2">
-                                <li><img src="icons/triadscasino.png"><input type="checkbox"><span>Fender Ketchup</span></li>
-                                <li><img src="icons/triadscasino.png"><input type="checkbox"><span>Explosive Situation</span></li>
-                                <li><img src="icons/triadscasino.png"><input type="checkbox"><span>You've Had Your Chips</span></li>
-                                <li><img src="icons/triadscasino.png"><input type="checkbox"><span>Don Peyote</span></li>
-                                <li><img src="icons/mafia.png"><input type="checkbox"><span>Intensive Care</span></li>
-                                <li><img src="icons/crash.png"><input type="checkbox"><span>Misappropriation</span></li>
-                                <li><img src="icons/mafia.png"><input type="checkbox"><span>The Meat Business</span></li>
-                                <li><img src="icons/triadscasino.png"><input type="checkbox"><span>Fish in a Barrel</span></li>
-                                <li><img src="icons/madddogg.png"><input type="checkbox"><span>Madd Dogg</span></li>
-                                <li><img src="icons/mafia.png"><input type="checkbox"><span>Freefall</span></li>
-                                <li><img src="icons/crash.png"><input type="checkbox"><span>High Noon</span></li>
-                                <li><img src="icons/mafia.png"><input type="checkbox"><span>Saint Mark's Bistro</span></li>
+                                <li><img src="icons/triadscasino.png"><input type="checkbox" id="casino1" data-requires="airstrip1"><span>Fender Ketchup</span></li>
+                                <li><img src="icons/triadscasino.png"><input type="checkbox" id="casino2" data-requires="casino1"><span>Explosive Situation</span></li>
+                                <li><img src="icons/triadscasino.png"><input type="checkbox" id="casino3" data-requires="casino2"><span>You've Had Your Chips</span></li>
+                                <li><img src="icons/triadscasino.png"><input type="checkbox" id="casino4" data-requires="casino3"><span>Don Peyote</span></li>
+                                <li><img src="icons/mafia.png"><input type="checkbox" id="casino5" data-requires="casino4"><span>Intensive Care</span></li>
+                                <li><img src="icons/crash.png"><input type="checkbox" id="casino6" data-requires="casino5,airstrip4"><span>Misappropriation</span></li>
+                                <li><img src="icons/mafia.png"><input type="checkbox" id="casino7" data-requires="casino5"><span>The Meat Business</span></li>
+                                <li><img src="icons/triadscasino.png"><input type="checkbox" id="casino8" data-requires="casino7"><span>Fish in a Barrel</span></li>
+                                <li><img src="icons/madddogg.png"><input type="checkbox" id="casino9" data-requires="casino7"><span>Madd Dogg</span></li>
+                                <li><img src="icons/mafia.png"><input type="checkbox" id="casino10" data-requires="casino8"><span>Freefall</span></li>
+                                <li><img src="icons/crash.png"><input type="checkbox" id="casino11" data-requires="casino6,casino10"><span>High Noon</span></li>
+                                <li><img src="icons/mafia.png"><input type="checkbox" id="casino12" data-requires="airstrip5,casino9,casino11"><span>Saint Mark's Bistro</span></li>
                             </ul>
                         </div>
 
                         <div>
                             <b>Heist Missions</b>
                             <ul style="columns:2">
-                                <li><img src="icons/cash.png"><input type="checkbox"><span>Architectural Espionage</span></li>
-                                <li><img src="icons/cash.png"><input type="checkbox"><span>Key to Her Heart</span></li>
-                                <li><img src="icons/cash.png"><input type="checkbox"><span>Dam and Blast</span></li>
-                                <li><img src="icons/cash.png"><input type="checkbox"><span>Cop Wheels</span></li>
-                                <li><img src="icons/cash.png"><input type="checkbox"><span>Up, Up, and Away</span></li>
-                                <li><img src="icons/cash.png"><input type="checkbox"><span>Breaking the Bank at Caligula's</span></li>
+                                <li><img src="icons/cash.png"><input type="checkbox" id="heist1" data-requires="casino2"><span>Architectural Espionage</span></li>
+                                <li><img src="icons/cash.png"><input type="checkbox" id="heist2" data-requires="heist1"><span>Key to Her Heart</span></li>
+                                <li><img src="icons/cash.png"><input type="checkbox" id="heist3" data-requires="heist2"><span>Dam and Blast</span></li>
+                                <li><img src="icons/cash.png"><input type="checkbox" id="heist4" data-requires="heist3"><span>Cop Wheels</span></li>
+                                <li><img src="icons/cash.png"><input type="checkbox" id="heist5" data-requires="heist4"><span>Up, Up, and Away</span></li>
+                                <li><img src="icons/cash.png"><input type="checkbox" id="heist6" data-requires="heist5,casino12"><span>Breaking the Bank at Caligula's</span></li>
                             </ul>
                         </div>
 
@@ -530,27 +530,27 @@
                         <div>
                             <b>Mansion Missions</b>
                             <ul style="columns:2">
-                                <li><img src="icons/triadscasino.png"><input type="checkbox"><span>A Home in the Hills</span></li>
-                                <li><img src="icons/cj.png"><input type="checkbox"><span>Vertical Bird</span></li>
-                                <li><img src="icons/toreno.png"><input type="checkbox"><span>Home Coming</span></li>
-                                <li><img src="icons/madddogg.png"><input type="checkbox"><span>Cut Throat Business</span></li>
+                                <li><img src="icons/triadscasino.png"><input type="checkbox" id="mansion1" data-requires="casino12"><span>A Home in the Hills</span></li>
+                                <li><img src="icons/cj.png"><input type="checkbox" id="mansion2" data-requires="mansion1"><span>Vertical Bird</span></li>
+                                <li><img src="icons/toreno.png"><input type="checkbox" id="mansion3" data-requires="mansion2"><span>Home Coming</span></li>
+                                <li><img src="icons/madddogg.png"><input type="checkbox" id="mansion4" data-requires="mansion3"><span>Cut Throat Business</span></li>
                             </ul>
                         </div>
 
                         <div>
                             <b>Grove Street Missions</b>
                             <ul style="columns:2">
-                                <li><img src="icons/sweet.png"><input type="checkbox"><span>Beat Down on B-Dup</span></li>
-                                <li><img src="icons/sweet.png"><input type="checkbox"><span>Grove 4 Life</span></li>
+                                <li><img src="icons/sweet.png"><input type="checkbox" id="grove1" data-requires="mansion3"><span>Beat Down on B-Dup</span></li>
+                                <li><img src="icons/sweet.png"><input type="checkbox" id="grove2" data-requires="grove1"><span>Grove 4 Life</span></li>
                             </ul>
                         </div>
 
                         <div>
                             <b>Riot Missions</b>
                             <ul style="columns:2">
-                                <li><img src="icons/cj.png"><input type="checkbox"><span>Riot</span></li>
-                                <li><img src="icons/sweet.png"><input type="checkbox"><span>Los Desperados</span></li>
-                                <li><img src="icons/sweet.png"><input type="checkbox"><span>End of the Line</span></li>
+                                <li><img src="icons/cj.png"><input type="checkbox" id="riot1" data-requires="grove2,mansion4"><span>Riot</span></li>
+                                <li><img src="icons/sweet.png"><input type="checkbox" id="riot2" data-requires="riot1"><span>Los Desperados</span></li>
+                                <li><img src="icons/sweet.png"><input type="checkbox" id="riot3" data-requires="riot2"><span>End of the Line</span></li>
                             </ul>
                         </div>
 
@@ -662,13 +662,13 @@
                 <div class="contents">
                     <div style="margin: 0px auto">
                         <ul style="columns: 2">
-                            <li><input type="checkbox" id="vehicle1"><span>Taxi Driver: 50 Fares</span></li>
-                            <li><input type="checkbox" id="vehicle2"><span>Paramedic: Level 12</span></li>
-                            <li><input type="checkbox" id="vehicle3"><span>Firefighter: Level 12</span></li>
-                            <li><input type="checkbox" id="vehicle4"><span>Vigilante: Level 12</span></li>
-                            <li><input type="checkbox" id="vehicle5"><span>Valet: Level 5</span></li>
-                            <li><input type="checkbox" id="vehicle6"><span>Pimping: Level 10</span></li>
-                            <li><input type="checkbox" id="vehicle7"><span>Freight Train: Level 2</span></li>
+                            <li><input type="checkbox" id="vehicle1"><span altname="Taxi Driver Missions">Taxi Driver: 50 Fares</span></li>
+                            <li><input type="checkbox" id="vehicle2"><span altname="Paramedic Missions">Paramedic: Level 12</span></li>
+                            <li><input type="checkbox" id="vehicle3"><span altname="Firefighter Missions">Firefighter: Level 12</span></li>
+                            <li><input type="checkbox" id="vehicle4"><span altname="Vigilante Missions">Vigilante: Level 12</span></li>
+                            <li><input type="checkbox" id="vehicle5" data-requires="garage2"><span altname="Valet Missions">Valet: Level 5</span></li>
+                            <li><input type="checkbox" id="vehicle6"><span altname="Pimping Missions">Pimping: Level 10</span></li>
+                            <li><input type="checkbox" id="vehicle7" data-requires="syn10"><span altname="Freight Train Missions">Freight Train: Level 2</span></li>
                         </ul>
                     </div>
                 </div>
@@ -692,14 +692,14 @@
                         <img src="icons/trucking.png">
                         <b>Trucking Missions</b>
                         <ul style="columns:3">
-                            <li><input type="checkbox" id="truck1"><span>Mission 1</span></li>
-                            <li><input type="checkbox" id="truck2"><span>Mission 2</span></li>
-                            <li><input type="checkbox" id="truck3"><span>Mission 3</span></li>
-                            <li><input type="checkbox" id="truck4"><span>Mission 4</span></li>
-                            <li><input type="checkbox" id="truck5"><span>Mission 5</span></li>
-                            <li><input type="checkbox" id="truck6"><span>Mission 6</span></li>
-                            <li><input type="checkbox" id="truck7"><span>Mission 7</span></li>
-                            <li><input type="checkbox" id="truck8"><span>Mission 8</span></li>
+                            <li><input type="checkbox" id="truck1" data-requires="cat1"><span altname="Trucking Mission 1">Mission 1</span></li>
+                            <li><input type="checkbox" id="truck2" data-requires="truck1"><span altname="Trucking Mission 2">Mission 2</span></li>
+                            <li><input type="checkbox" id="truck3" data-requires="truck2"><span altname="Trucking Mission 3">Mission 3</span></li>
+                            <li><input type="checkbox" id="truck4" data-requires="truck3"><span altname="Trucking Mission 4">Mission 4</span></li>
+                            <li><input type="checkbox" id="truck5" data-requires="truck4"><span altname="Trucking Mission 5">Mission 5</span></li>
+                            <li><input type="checkbox" id="truck6" data-requires="truck5"><span altname="Trucking Mission 6">Mission 6</span></li>
+                            <li><input type="checkbox" id="truck7" data-requires="truck6"><span altname="Trucking Mission 7">Mission 7</span></li>
+                            <li><input type="checkbox" id="truck8" data-requires="truck7"><span altname="Trucking Mission 8">Mission 8</span></li>
                         </ul>
                     </div>
 
@@ -723,12 +723,12 @@
 
                     <div>
                         <img src="icons/ammunation.png">
-                        <b>Shooting Range</b>
+                        <b>Ammu-Nation Range</b>
                         <ul>
-                            <li><input type="checkbox"><span>Pistol Challenge</span></li>
-                            <li><input type="checkbox"><span>SMG Challenge</span></li>
-                            <li><input type="checkbox"><span>Shotgun Challenge</span></li>
-                            <li><input type="checkbox"><span>AK-47 Challenge</span></li>
+                            <li><input type="checkbox" data-requires="sweet7"><span altname="Ammu-Nation Pistol Challenge">Pistol Challenge</span></li>
+                            <li><input type="checkbox" data-requires="sweet7"><span altname="Ammu-Nation Micro SMG Challenge">Micro SMG Challenge</span></li>
+                            <li><input type="checkbox" data-requires="lsf2"><span altname="Ammu-Nation Shotgun Challenge">Shotgun Challenge</span></li>
+                            <li><input type="checkbox" data-requires="syn10"><span altname="Ammu-Nation AK-47 Challenge">AK-47 Challenge</span></li>
                         </ul>
                     </div>
 
@@ -759,9 +759,9 @@
                         <img src="icons/school.png">
                         <b>Schools (All lessons)</b>
                         <ul>
-                            <li><input type="checkbox" id="school1"><span>Driving School</span></li>
-                            <li><input type="checkbox" id="school2"><span>Boat School</span></li>
-                            <li><input type="checkbox" id="school3"><span>Bike School</span></li>
+                            <li><input type="checkbox" id="school1" data-requires="garage3"><span>Driving School</span></li>
+                            <li><input type="checkbox" id="school2" data-requires="garage3"><span>Boat School</span></li>
+                            <li><input type="checkbox" id="school3" data-requires="garage3"><span>Bike School</span></li>
                         </ul>
                     </div>
 
@@ -781,48 +781,48 @@
                     <div>
                         <b>List 1</b>
                         <ul style="columns:3">
-                            <li><input type="checkbox"><span>Admiral</span></li>
-                            <li><input type="checkbox"><span>Buffalo</span></li>
-                            <li><input type="checkbox"><span>Camper</span></li>
-                            <li><input type="checkbox"><span>Feltzer</span></li>
-                            <li><input type="checkbox"><span>Infernus</span></li>
-                            <li><input type="checkbox"><span>Patriot</span></li>
-                            <li><input type="checkbox"><span>Remington</span></li>
-                            <li><input type="checkbox"><span>Sanchez</span></li>
-                            <li><input type="checkbox"><span>Sentinel</span></li>
-                            <li><input type="checkbox"><span>Stretch</span></li>
+                            <li><input type="checkbox" data-requires="wang3"><span>Admiral</span></li>
+                            <li><input type="checkbox" data-requires="wang3"><span>Buffalo</span></li>
+                            <li><input type="checkbox" data-requires="wang3"><span>Camper</span></li>
+                            <li><input type="checkbox" data-requires="wang3"><span>Feltzer</span></li>
+                            <li><input type="checkbox" data-requires="wang3"><span>Infernus</span></li>
+                            <li><input type="checkbox" data-requires="wang3"><span>Patriot</span></li>
+                            <li><input type="checkbox" data-requires="wang3"><span>Remington</span></li>
+                            <li><input type="checkbox" data-requires="wang3"><span>Sanchez</span></li>
+                            <li><input type="checkbox" data-requires="wang3"><span>Sentinel</span></li>
+                            <li><input type="checkbox" data-requires="wang3"><span>Stretch</span></li>
                         </ul>
                     </div>
 
                     <div>
                         <b>List 2</b>
                         <ul style="columns:3">
-                            <li><input type="checkbox"><span>Blista Compact</span></li>
-                            <li><input type="checkbox"><span>Cheetah</span></li>
-                            <li><input type="checkbox"><span>Comet</span></li>
-                            <li><input type="checkbox"><span>FCR-900</span></li>
-                            <li><input type="checkbox"><span>Rancher</span></li>
-                            <li><input type="checkbox"><span>Sabre</span></li>
-                            <li><input type="checkbox"><span>Slamvan</span></li>
-                            <li><input type="checkbox"><span>Stafford</span></li>
-                            <li><input type="checkbox"><span>Stallion</span></li>
-                            <li><input type="checkbox"><span>Tanker</span></li>
+                            <li><input type="checkbox" data-requires="wang3"><span>Blista Compact</span></li>
+                            <li><input type="checkbox" data-requires="wang3"><span>Cheetah</span></li>
+                            <li><input type="checkbox" data-requires="wang3"><span>Comet</span></li>
+                            <li><input type="checkbox" data-requires="wang3"><span>FCR-900</span></li>
+                            <li><input type="checkbox" data-requires="wang3"><span>Rancher</span></li>
+                            <li><input type="checkbox" data-requires="wang3"><span>Sabre</span></li>
+                            <li><input type="checkbox" data-requires="wang3"><span>Slamvan</span></li>
+                            <li><input type="checkbox" data-requires="wang3"><span>Stafford</span></li>
+                            <li><input type="checkbox" data-requires="wang3"><span>Stallion</span></li>
+                            <li><input type="checkbox" data-requires="wang3"><span>Tanker</span></li>
                         </ul>
                     </div>
 
                     <div>
                         <b>List 3</b>
                         <ul style="columns:3">
-                            <li><input type="checkbox"><span>Banshee</span></li>
-                            <li><input type="checkbox"><span>BF Injection</span></li>
-                            <li><input type="checkbox"><span>Blade</span></li>
-                            <li><input type="checkbox"><span>Euros</span></li>
-                            <li><input type="checkbox"><span>Freeway</span></li>
-                            <li><input type="checkbox"><span>Journey</span></li>
-                            <li><input type="checkbox"><span>Huntley</span></li>
-                            <li><input type="checkbox"><span>Mesa</span></li>
-                            <li><input type="checkbox"><span>Super GT</span></li>
-                            <li><input type="checkbox"><span>ZR-350</span></li>
+                            <li><input type="checkbox" data-requires="wang3"><span>Banshee</span></li>
+                            <li><input type="checkbox" data-requires="wang3"><span>BF Injection</span></li>
+                            <li><input type="checkbox" data-requires="wang3"><span>Blade</span></li>
+                            <li><input type="checkbox" data-requires="wang3"><span>Euros</span></li>
+                            <li><input type="checkbox" data-requires="wang3"><span>Freeway</span></li>
+                            <li><input type="checkbox" data-requires="wang3"><span>Journey</span></li>
+                            <li><input type="checkbox" data-requires="wang3"><span>Huntley</span></li>
+                            <li><input type="checkbox" data-requires="wang3"><span>Mesa</span></li>
+                            <li><input type="checkbox" data-requires="wang3"><span>Super GT</span></li>
+                            <li><input type="checkbox" data-requires="wang3"><span>ZR-350</span></li>
                         </ul>
                     </div>
 
