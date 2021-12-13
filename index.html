@@ -1488,9 +1488,10 @@
             modal.iziModal('open');
         })
 
+        // Instantiate audio object globally so that we only have one sound playing at a time
+        const audio = new Audio();
         function playAudio(url) {
             return new Promise(function(resolve, reject) {
-                var audio = new Audio();
                 audio.preload = "auto";
                 audio.autoplay = true;
                 audio.onerror = reject;
