@@ -73,11 +73,30 @@
             padding-left: 15px;
         }
 
+        #notifications {
+            position: fixed;
+            top: 60px;
+            left: 15px;
+            min-width: 300px;
+        }
+
+        #notifications > div {
+            position: relative;
+            min-height: 25px;
+            background: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            width: fit-content;
+            min-width: 295px;
+            font-size: 20px;
+            font-family: ViceCitySans;
+            padding: 10px 15px;
+            margin: 10px 0;
+        }
+
         #perks {
             display: flex;
             top: 70px;
             height: auto;
-            min-width: 300px;
             width: auto;
         }
 
@@ -204,6 +223,7 @@
 <body>
 
     <div id="progress">Loading...</div>
+    <div id="notifications"></div>
 
     <div id="perks" style="display: none;">
         <div>
@@ -1518,6 +1538,14 @@
             })
             console.table(missionList);
             $('[data-modal="debug_list"]').iziModal('open');
+        }
+
+        function sendToast(text, playSound = true, clearAll = false) {
+            const rand = Math.floor(Math.random() * 100000);
+            if (clearAll) $('#notifications').empty();
+            $('#notifications').append(`<div id="notif_${rand}">${text}</div>`);
+            if (playSound) playAudio('sounds/vc-notification.mp3');
+            setTimeout(() => $(`#notif_${rand}`).remove(), 4000);
         }
 
     </script>
