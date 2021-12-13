@@ -1451,6 +1451,8 @@
             let numSelected = 0;
             const numTotal = $('input').length;
 
+            const justUnlocked = [];
+
             $('input').each((index, elem) => {
 
                 // If item has requirements
@@ -1461,13 +1463,14 @@
                     requirements.forEach(req => {
                         if (!$(`#${req}`).is(':checked')) {
                             meetsRequirements = false;
-                            unmetRequirements.push($(`#${req}`).next().text());
+                            unmetRequirements.push($(`#${req}`).next().attr('altname') || $(`#${req}`).next().text());
                         }
                     });
                     if (unmetRequirements.length) {
-                        $(elem).next().attr('tooltip', 'Unlocked by: ' + unmetRequirements.join(','));
+                        $(elem).next().attr('tooltip', 'Unlocked by: ' + unmetRequirements.join(', '));
                         $(elem).attr('disabled', true);
                     } else {
+                        if ($(elem).attr('disabled')) justUnlocked.push($(elem).next().attr('altname') || $(elem).next().text());
                         $(elem).next().removeAttr('tooltip');
                         $(elem).attr('disabled', null);
                     }
@@ -1481,6 +1484,8 @@
 
             const completedPct = (numSelected/numTotal) * 100;
             $('#progress').text(`${numSelected}/${numTotal} (${completedPct.toFixed(2)}%) Completed`);
+
+            if (justUnlocked.length) sendToast(`Unlocked Missions:<br>${justUnlocked.join('<br>')}`, false, true);
 
             playAudio('sounds/vc-notification.mp3');
         }
