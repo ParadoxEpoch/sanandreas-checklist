@@ -1,4 +1,5 @@
 # SanAndreas-Checklist
+
 A comprehensive 100% checklist for GTA San Andreas
 
 This project uses the localStorage Web API to remember your progress, so you can tick some checkboxes and come back later to resume where you left off.
@@ -26,7 +27,7 @@ git clone https://github.com/Maega/sanandreas-checklist
 
 * :x: Progress-related unlocks (weapon & vehicle spawns, outfits, health buffs etc)
 
-* :heavy_check_mark: Strategy notes (mission strategy notes, exploits, warnings for missable trophies & game bugs that may affect progression etc)
+* :heavy_check_mark: Strategy notes (mission strategy notes, exploits, missable trophies & game bugs that may affect progression etc)
 
 ## :heart: Support
 
